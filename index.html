@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Desafio Alura!</title>
-    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Encriptador-challenge 1    
+    </title>
 </head>
-
 <body>
-    <header>
-       
-        <section class="textos-header">
-            <h1>Código Secreto</h1>
-          
-                <section class="form box">
-                  <form action="">
-                    <label for="input-texto" class="input-text">Solo letras minúsculas, sin acento</label>
-                    <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-                    <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
-                    <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
-                  </form>
-                </section>
-              
-                <section class="msg box">
-                  <h2 id="">Mensaje encriptada:</h2>
-                  <input class="text-input" type="text" id="msg" readonly></input>
-                  <input class="btn" type="submit" value="copiar" id="btn-copy">
-                </section>
-              </main>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
-    </header>
+    <div class="container">
+        <div class="logo">
+            <img  class="logoImg"
+            src="img/logo.png" alt="logo Alura">
+            <h1 class="title">Encriptador de mensajes</h1>
 
-        <h2 class="titulo-final">&copy;|Gabriela Gomez</h2>
-    </footer>
-    <script src="script.js"></script>
+        </div>
+    <div class="left">
+       <input class="textInput" id="inputTexto"  type="text"  placeholder="Ingrese el texto aqui">
+
+    </div>
+    <div class="right">
+        <img src="img/nene.png" id="imgDer" alt="nene con lupa">
+        <h1 id="texto"> Ningún mensaje fue encontrado</h1>
+        <textarea  id="texto2" name="name" >Ingrese el texto que desee encriptar o desencriptar.</textarea>
+        <button id="copiar" type="button" name="button" onclick="copy()">Copiar !</button>
+
+    </div>
+
+
+    <div class="left-button">
+         <p class="reglas">Solo minúsculas y sin acentos</p>
+        <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+         <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+    </div>
+
+    </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

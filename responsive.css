@@ -1,0 +1,125 @@
+@media screen and (max-width:688px){
+    .container{
+        width: 668px;
+        height: 1174px;
+    }
+
+    .title{
+        display: none;
+    }
+    .logoImg{
+     
+        margin-left:0%;
+    }
+    .left-button{
+        width: 90%;
+       padding: 24px;
+      
+       margin-left: 0%;
+    }
+   
+
+.reglas{
+    margin-left: 10%;
+}    
+
+.right{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    position: absolute;
+    height: 343px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 1100px;
+  }
+
+#texto{
+    text-align: center;
+}
+
+#texto2{
+    text-align: center;
+    margin-left: 0;
+}
+
+#imgDer{
+    display: none;
+}
+
+#copiar{  
+    margin-top:150px;
+    margin-left:10px;
+    margin-right:0px;
+
+    text-align: center;
+    justify-items: center;
+    width: 90%;
+    height:auto;
+    font-size: 16px;
+    display: none;
+    align-items: center;
+    flex-direction: column; 
+      }
+
+ #btn-encriptar{
+     padding: 24px;
+     width: 270px;
+     height: 60%;
+     margin-left: 15px;  
+    }
+    
+ #btn-desencriptar{
+    padding: 24px;
+    width: 270px;
+    height: 60%;  
+    margin-left: 10px;  
+    }
+}
+
+
+@media screen and (max-width:375px) {
+.container{
+    width: 300px;
+    height:933px;
+    margin: 0px;
+    padding: 0px;
+
+}
+ .left-button{
+   width: 300px; 
+   grid-template-columns: 1fr;
+   margin: 0px;
+   margin-left: 5%;
+   padding: 0px;     
+ }
+
+.left{
+    height: 60%;
+     }
+
+ .right{
+    width: 300px;
+    height: auto;
+    margin-top: 880px;
+    margin-left: 5%;
+    }
+
+ #btn-encriptar{  
+    width: 300px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    margin-left: 0px;        
+    }
+    
+#btn-desencriptar{
+    width: 300px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    margin-left: 0px;
+    margin-top: 10px; 
+    }
+}
